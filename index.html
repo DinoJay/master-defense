@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+          <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+              <section>
+                <h1>TagVis</h1>
+                <h3>a Visualisation of Relationships Between Tags</h3>
+                <p>
+                <small>Master - Thesis Defense by
+                  <a href="http://hakim.se">Jan Maushagen</a> </small>
+                </p>
+              </section>
+
+              <section>
+                <h2>structure of the talk</h2>
+
+                <ol>
+                  <li>Introduction </li>
+                  <!-- the WWW and Search-->
+                  <li>Design  &amp; Implementation</li>
+                  <li>Evaluation</li>
+                  <li>Conclusion</li>
+                </ol>
+                <aside class="notes">
+                  the world wide web and search
+                </aside>
+              </section>
+
+              <section>
+                <section>
+                  <h2>The World Wide Web and Search</h2>
+                  <p>TODO: Big Mess </p>
+                    <img width="578" height="400"
+                    data-src="/images/trail.png" alt="Down arrow">
+                </section>
+                <section>
+                  <h2>Google Search Paradigm</h2>
+                  <a href="#" class="navigate-down">
+                    <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
+                  </a>
+                </section>
+                <section>
+                  <h2>Extreme Form of Actionable Thinking</h2>
+                    <img width="578" height="400" data-src="/images/action_thinking.png" alt="Down arrow">
+                </section>
+              </section>
+              <!-- Example of nested vertical slides -->
+              <section>
+                <section>
+                  <h2>Yahoo's top-level categories</h2>
+                  <p>One of the first attempts to bring order into the web</p>
+                  <a href="#" class="navigate-down">
+                    <img width="578" height="400"
+                    data-src="/images/entertainment.jpg" alt="Down arrow">
+                  </a>
+                </section>
+                <section>
+                  <h2>Taxonomy</h2>
+                  <p>File System with few symbolic links</p>
+                  <p>Navigation facility for Open ended Exploration</p>
+                  <img width="578" height="400"
+                  data-src="/images/hierarchy_links.jpg" alt="Down arrow">
+                </section>
+                <section>
+                  <h3>Unlimited symbolic links</h3>
+                  <p>This is no Hierarchy anymore, perfect for the Web,
+                  it's Tagging
+                  </p>
+                  <img width="578" height="400"
+                  data-src="/images/just_links.jpg" alt="Down arrow">
+
+                    <!-- captures perfectly the structure of the web -->
+                    <!-- Mult&#45;Classification with the user's vocabulary  -->
+                </section>
+              </section>
+              <section>
+                <section>
+                  <h2>Tagging</h2>
+                  <p>Mult-Classification with the user's vocabulary </p>
+                  <img width="578" height="400"
+                  data-src="/images/tagging.png" alt="Down arrow">
+                </section>
+                <section>
+                  <h2>Tags are difficult to explore</h2>
+                  <p>By default no navigation facility</p>
+                  <ul>
+                    <li>Query Browse and Refine</li>
+                    <li>Tag (Set) Visualization</li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>Tag Cloud</h2>
+
+                  <div>
+                    <ul>
+                      <li>Visual Striking Statements</li>
+                      <li>but only frequency visible</li>
+                    </ul>
+                  </div>
+                  <img width="400" height="400"
+                  data-src="/images/wordcloud.png" alt="Down arrow">
+                </section>
+                <section>
+                  <h2>Venn Diagram</h2>
+                  <div>
+                    <ul>
+                      <li>Intersections</li>
+                      <li>Poor scaling</li>
+                    </ul>
+                  </div>
+                  <img data-src="/images/venn-diagram.png">
+                </section>
+              </section>
+                <section>
+                  <h2>Design Drivers</h2>
+                  <div>
+                    <ul>
+                      <li>Exploratory Search</li>
+                      <li>Visual Exploration</li>
+                      <li>User Experience</li>
+                      <aside class="notes">
+                        no design methodologies for the two first, but for UX
+                      </aside>
+                    </ul>
+                  </div>
+                </section>
+                <section>
+                  <h2>Exploratory Search</h2>
+                  <p>Discovery of Knowledge Gaps</p>
+                  <img data-src="/images/exploratory_search.png">
+                </section>
+                <section>
+                  <h2>Evaluation</h2>
+                </section>
+              <section>
+                <h2>Conclusion</h2>
+              </section>
+            </div>
+
+          </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
