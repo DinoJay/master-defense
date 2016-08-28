@@ -48,12 +48,14 @@
                   <a href="http://hakim.se">Jan Maushagen</a> </small>
                 </p>
               </section>
-
+              <section>
+                <h2>Tags and Tweets</h2>
+                  <img data-src="/images/beat_signer_tweet.png" alt="Down arrow">
+              </section>
               <section>
                 <h2>structure of the talk</h2>
-
                 <ol>
-                  <li>Introduction </li>
+                  <li>Motivation (History)</li>
                   <!-- the WWW and Search-->
                   <li>Design  &amp; Implementation</li>
                   <li>Evaluation</li>
@@ -66,47 +68,67 @@
 
               <section>
                 <section>
-                  <h2>The World Wide Web and Search</h2>
-                  <p>TODO: Big Mess </p>
+                  <h2>Motivation</h2>
+                  <p>The World Wide Web exposes a hyperlinked structure</p>
                     <img width="578" height="400"
                     data-src="/images/trail.png" alt="Down arrow">
                 </section>
                 <section>
-                  <h2>Google Search Paradigm</h2>
+                  <h3>Google Search Paradigm</h3>
+                  <p>Query-Response technique enables sense making of the Web.</p>
                   <a href="#" class="navigate-down">
                     <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
                   </a>
                 </section>
                 <section>
-                  <h2>Extreme Form of Actionable Thinking</h2>
+                  <h3>Actionable Thinking</h3>
+                  <p>What do you ask if you don't know what are you looking for?</p>
                     <img width="578" height="400" data-src="/images/action_thinking.png" alt="Down arrow">
+                <aside class="notes">
+                  Google Paradigm reaches its limits
+                </aside>
                 </section>
               </section>
               <!-- Example of nested vertical slides -->
               <section>
                 <section>
-                  <h2>Yahoo's top-level categories</h2>
-                  <p>One of the first attempts to bring order into the web</p>
-                  <a href="#" class="navigate-down">
-                    <img width="578" height="400"
-                    data-src="/images/entertainment.jpg" alt="Down arrow">
-                  </a>
+                  <h3>Yahoo's top-level categories</h3>
+                  <p>An attempt to simplify the structure of the Web</p>
+                  <ul>
+                    <li>Tangible Navigation links</li>
+                    <li>Permits open ended Exploration</li>
+                  </ul>
+                    <img width="578" height="400" data-src="/images/entertainment.jpg" alt="Down arrow">
+                  <aside class="notes">
+                    frees the mind from Actionable thinking
+                    you can gradually clarify your information need
+                  </aside>
                 </section>
                 <section>
                   <h2>Taxonomy</h2>
-                  <p>File System with few symbolic links</p>
-                  <p>Navigation facility for Open ended Exploration</p>
+                  <p>Yahoo Top Level Categories make use of a tree structure</p>
+                  <ul>
+                    <li>File System with few symbolic links</li>
+                    <li>Classification Problem</li>
+                  </ul>
                   <img width="578" height="400"
                   data-src="/images/hierarchy_links.jpg" alt="Down arrow">
+                  <aside class="notes">
+                    good for navigation but does not capture the topology of the web
+                    difficult to scale for growing information space
+                  </aside>
                 </section>
                 <section>
                   <h3>Unlimited symbolic links</h3>
-                  <p>This is no Hierarchy anymore, perfect for the Web,
-                  it's Tagging
-                  </p>
+                  <p>What happens if one would allow unlimited symbolic links?</p>
                   <img width="578" height="400"
                   data-src="/images/just_links.jpg" alt="Down arrow">
 
+                  <aside class="notes">
+                    if you allow unlimited symbolic links you obtain a graph
+                    underlying structure of tagging
+                    but difficult to navigate
+                  </aside>
                     <!-- captures perfectly the structure of the web -->
                     <!-- Mult&#45;Classification with the user's vocabulary  -->
                 </section>
@@ -114,17 +136,20 @@
               <section>
                 <section>
                   <h2>Tagging</h2>
-                  <p>Mult-Classification with the user's vocabulary </p>
+                  <p>Multi-Classification with the user's vocabulary </p>
                   <img width="578" height="400"
                   data-src="/images/tagging.png" alt="Down arrow">
                 </section>
                 <section>
-                  <h2>Tags are difficult to explore</h2>
-                  <p>By default no navigation facility</p>
+                  <h3>Tags are difficult to explore</h3>
+                  <p>By default, there is no navigation facility:</p>
                   <ul>
                     <li>Query Browse and Refine</li>
                     <li>Tag (Set) Visualization</li>
                   </ul>
+                  <aside class="notes">
+                    no predefined categories, user generated
+                  </aside>
                 </section>
                 <section>
                   <h2>Tag Cloud</h2>
@@ -148,10 +173,30 @@
                   </div>
                   <img data-src="/images/venn-diagram.png">
                 </section>
-              </section>
                 <section>
-                  <h2>Design Drivers</h2>
+                  <h2>Node-Link Diagram</h2>
                   <div>
+                    <ul>
+                      <li>showing Intersection with links</li>
+                    </ul>
+                  </div>
+                  <img data-src="/images/foci_layout.png">
+                </section>
+              </section>
+              <section>
+                <h2>Thesis Aims</h2>
+                <p>A new Tag Visualisation technique for Search needs to be developed with:</p>
+                <ul>
+                  <li>better Scaling</li>
+                  <li>navigation structure</li>
+                  <li>Visual appealing </li>
+                </ul>
+              </section>
+              <section>
+                <section>
+                  <h2>Background</h2>
+                  <div>
+                    <p>Several research fields are selected to drive the development</p>
                     <ul>
                       <li>Exploratory Search</li>
                       <li>Visual Exploration</li>
@@ -162,17 +207,104 @@
                     </ul>
                   </div>
                 </section>
-                <section>
-                  <h2>Exploratory Search</h2>
-                  <p>Discovery of Knowledge Gaps</p>
-                  <img data-src="/images/exploratory_search.png">
+                  <section>
+                    <h2>Exploratory Search</h2>
+                    <p>Construction of Knowledge through Search</p>
+                    <img data-src="/images/exploratory_search.png">
+                    <aside class="notes">
+                      Discovery of Knowledge Gaps
+                    </aside>
+                  </section>
+                  <section>
+                    <h2>Visual Exploration</h2>
+                    <table>
+                      <tr>
+                        <th>Query-Refine</th>
+                        <th>Exploration</th>
+                      </tr>
+                      <tr>
+                        <td>specific</th>
+                        <td>Engaging</td>
+                      </tr>
+                      <tr>
+                        <td>low level</td>
+                        <td>High-level</td>
+                      </tr>
+                      <tr>
+                        <td>ranked</td>
+                        <td>multi-faceted</td>
+                      </tr>
+                      <tr>
+                        <td>textual</td>
+                        <td>multi-modal</td>
+                      </tr>
+                    </table>
+                  </section>
+                  <section>
+                    <h2>User Experience</h2>
+                    <p>Model of HCI that goes beyond pure functonality</p>
+                    <p>Requirements are centred around Be- and Do-Goals</p>
+                    <ul>
+                      <li> competence </li>
+                      <li> security </li>
+                      <li> stimulation </li>
+                    </ul>
+                  </section>
                 </section>
                 <section>
+                  <section>
+                  <h2>Design of TagVis</h2>
+                    <ul>
+                      <li>Personal Information Domain</li>
+                      <li>User-centered (Personas)</li>
+                      <li>Iterative Development of Prototypes</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Personal Information</h2>
+                    <p>Research Training: the role of exploration in PI</p>
+                    <ul>
+                      <li>already experienced information</li>
+                      <li>existing Search cues (spatial, time, context)</li>
+                      <li>more target oriented exploration</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Design Methodology</h2>
+                    <p>3 Prototypes are integrated into one solution.</p>
+                    <p>Review is based visual readability and navigation modalities</p>
+                    <img data-src="/images/design_meth.png">
+                  </section>
+                  <section>
+                    <h4>Resulting Prototypes</h4>
+                    <img height="600px" data-src="/images/prots.jpg">
+                  </section>
+                </section>
+              <section>
+                <h2>TagVis Demo</h2>
+                <a href="http://localhost:8082/" data-preview-link>TagVis</a>
+              </section>
+              <section>
+              <section>
+                <h2>Theory and Implementation</h2>
+                <p>Starting point is the Tag Graph.</p>
+              </section>
+              </section>
+                <section>
                   <h2>Evaluation</h2>
+                  <p>Exploration = human experience = user story</p>
+                  <p>exploration = positive stimulation</p>
+                  <ul>
+                    <li> competence </li>
+                    <li> security </li>
+                    <li> stimulation </li>
+                  </ul>
                 </section>
               <section>
                 <h2>Conclusion</h2>
+
               </section>
+              <section data-external="tagVis/index.html"> </section>
             </div>
 
           </div>
@@ -188,6 +320,7 @@
 				progress: true,
 				history: true,
 				center: true,
+                                slideNumber: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -198,7 +331,7 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+				{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },	{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
