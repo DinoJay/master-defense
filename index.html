@@ -45,7 +45,7 @@
                 <h3>a Visualisation of Relationships Between Tags</h3>
                 <p>
                 <small>Master - Thesis Defense by
-                  <a href="http://hakim.se">Jan Maushagen</a> </small>
+                  <a href="">Jan Maushagen</a> </small>
                 </p>
               </section>
               <section>
@@ -56,9 +56,9 @@
                 <h2>structure of the talk</h2>
                 <ol>
                   <li>Motivation (History)</li>
-                  <!-- the WWW and Search-->
-                  <li>Design  &amp; Implementation</li>
-                  <li>Evaluation</li>
+                  <li>Background (research areas)</li>
+                  <li>Design  &amp; Evaluation</li>
+                  <li>Theory &amp; Implementation</li>
                   <li>Conclusion</li>
                 </ol>
                 <aside class="notes">
@@ -74,7 +74,7 @@
                     data-src="/images/trail.png" alt="Down arrow">
                 </section>
                 <section>
-                  <h3>Google Search Paradigm</h3>
+                  <h3>Google Search</h3>
                   <p>Query-Response technique enables sense making of the Web.</p>
                   <a href="#" class="navigate-down">
                     <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
@@ -136,7 +136,7 @@
               <section>
                 <section>
                   <h2>Tagging</h2>
-                  <p>Multi-Classification with the user's vocabulary </p>
+                  <p>This Multi-Classification technique is often used in Web 2.0.</p>
                   <img width="578" height="400"
                   data-src="/images/tagging.png" alt="Down arrow">
                 </section>
@@ -153,39 +153,34 @@
                 </section>
                 <section>
                   <h2>Tag Cloud</h2>
-
-                  <div>
-                    <ul>
-                      <li>Visual Striking Statements</li>
-                      <li>but only frequency visible</li>
-                    </ul>
-                  </div>
-                  <img width="400" height="400"
-                  data-src="/images/wordcloud.png" alt="Down arrow">
+                  <p>Only tag frequency is depicted.</p>
+                  <p>Visual pleasing representation engages in search activity.</p>
+                  <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
+                  <aside>
+                    no relationships
+                  </aside>
                 </section>
                 <section>
                   <h2>Venn Diagram</h2>
-                  <div>
-                    <ul>
-                      <li>Intersections</li>
-                      <li>Poor scaling</li>
-                    </ul>
-                  </div>
+                  <p>This technique depicts sets by circles and intersections by overlaps.</p>
                   <img data-src="/images/venn-diagram.png">
+                  <aside class="notes">
+                    intuitive
+                    bad scaling
+                  </aside>
                 </section>
                 <section>
                   <h2>Node-Link Diagram</h2>
-                  <div>
-                    <ul>
-                      <li>showing Intersection with links</li>
-                    </ul>
-                  </div>
+                  <p>Two nodes are connected if they intersect.</p>
                   <img data-src="/images/foci_layout.png">
                 </section>
               </section>
               <section>
                 <h2>Thesis Aims</h2>
-                <p>A new Tag Visualisation technique for Search needs to be developed with:</p>
+                <p>
+                A new Tag Visualisation technique for Search needs to be designed
+                with the following properties:
+                </p>
                 <ul>
                   <li>better Scaling</li>
                   <li>navigation structure</li>
@@ -196,7 +191,7 @@
                 <section>
                   <h2>Background</h2>
                   <div>
-                    <p>Several research fields are selected to drive the development</p>
+                    <p>Several research fields are selected to drive the development:</p>
                     <ul>
                       <li>Exploratory Search</li>
                       <li>Visual Exploration</li>
@@ -208,15 +203,16 @@
                   </div>
                 </section>
                   <section>
-                    <h2>Exploratory Search</h2>
-                    <p>Construction of Knowledge through Search</p>
+                    <h3>Exploratory Search</h3>
+                    <p>Knowledge is constructed through Search.</p>
                     <img data-src="/images/exploratory_search.png">
                     <aside class="notes">
                       Discovery of Knowledge Gaps
                     </aside>
                   </section>
                   <section>
-                    <h2>Visual Exploration</h2>
+                    <h3>Visual Exploration</h3>
+                    <p>This information behavior supports visual search</p>
                     <table>
                       <tr>
                         <th>Query-Refine</th>
@@ -241,14 +237,22 @@
                     </table>
                   </section>
                   <section>
-                    <h2>User Experience</h2>
+                    <h3>User Experience</h3>
                     <p>Model of HCI that goes beyond pure functonality</p>
-                    <p>Requirements are centred around Be- and Do-Goals</p>
-                    <ul>
-                      <li> competence </li>
-                      <li> security </li>
-                      <li> stimulation </li>
-                    </ul>
+                    <table>
+                      <tr>
+                        <th>Do-Goals</th>
+                        <th>Be-Goals</th>
+                      </tr>
+                      <tr>
+                        <td>functonality and performance</td>
+                        <td>psychological goals</td>
+                      </tr>
+                      <tr>
+                        <td>performing a certain task</td>
+                        <td>feeling competent, stimulated, related or secure in a task</td>
+                      </tr>
+                    </table>
                   </section>
                 </section>
                 <section>
@@ -261,8 +265,8 @@
                     </ul>
                   </section>
                   <section>
-                    <h2>Personal Information</h2>
-                    <p>Research Training: the role of exploration in PI</p>
+                    <h3>Personal Information</h3>
+                    <p>Research Training was based on the role of exploration in PI.</p>
                     <ul>
                       <li>already experienced information</li>
                       <li>existing Search cues (spatial, time, context)</li>
@@ -270,9 +274,9 @@
                     </ul>
                   </section>
                   <section>
-                    <h2>Design Methodology</h2>
+                    <h3>Design Methodology</h3>
                     <p>3 Prototypes are integrated into one solution.</p>
-                    <p>Review is based visual readability and navigation modalities</p>
+                    <p>Review is based visual readability and navigation modalities.</p>
                     <img data-src="/images/design_meth.png">
                   </section>
                   <section>
@@ -285,28 +289,60 @@
                 <a href="http://localhost:8082/" data-preview-link>TagVis</a>
               </section>
               <section>
+                <h2>Evaluation</h2>
+                <p>UX is tested with the Participant Observation technique.</p>
+                <!-- <p>Participants according the Perso</p> -->
+                <p>Users performed tasks on their personal bookmarks.</p>
+              </section>
               <section>
-                <h2>Theory and Implementation</h2>
-                <p>Starting point is the Tag Graph.</p>
-              </section>
-              </section>
                 <section>
-                  <h2>Evaluation</h2>
-                  <p>Exploration = human experience = user story</p>
-                  <p>exploration = positive stimulation</p>
-                  <ul>
-                    <li> competence </li>
-                    <li> security </li>
-                    <li> stimulation </li>
-                  </ul>
+                  <h2>Theory and Implementation</h2>
+                  <p>TagVis uses a two-layer graph layout.</p>
+                  <p>Starting point is the Tag Graph.</p>
                 </section>
+                <section>
+                  <h3>Tag Graph Simplification</h3>
+                  <p>The Tag Graph is traversed with BFS.</p>
+                  <p>Nodes are selected based on Generality:</p>
+                  <img data-src="/images/formula.png">
+                </section>
+                <section>
+                  <h3>Component Graph</h3>
+                  <p>TagVis uses connected components for the final layout.</p>
+                  <p>Each component is limited in size by maximal path length.</p>
+                </section>
+              </section>
+              </section>
               <section>
                 <h2>Conclusion</h2>
-
+                <p>What are the benefits and drawbacks of TagVis over its competitors?</p>
+              </section>
+              <section>
+                <table>
+                  <tr>
+                    <th>Benefits</th>
+                    <th>Exploration</th>
+                  </tr>
+                  <tr>
+                    <td>specific</th>
+                    <td>Engaging</td>
+                  </tr>
+                  <tr>
+                    <td>low level</td>
+                    <td>High-level</td>
+                  </tr>
+                  <tr>
+                    <td>ranked</td>
+                    <td>multi-faceted</td>
+                  </tr>
+                  <tr>
+                    <td>textual</td>
+                    <td>multi-modal</td>
+                  </tr>
+                </table>
               </section>
               <section data-external="tagVis/index.html"> </section>
             </div>
-
           </div>
 
 		<script src="lib/js/head.min.js"></script>
