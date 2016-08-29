@@ -49,102 +49,43 @@
                 </p>
               </section>
               <section>
-                <h2>Tags and Tweets</h2>
-                  <img data-src="/images/beat_signer_tweet.png" alt="Down arrow">
-              </section>
-              <section>
                 <h2>structure of the talk</h2>
                 <ol>
-                  <li>Motivation (History)</li>
-                  <li>Background (research areas)</li>
-                  <li>Design  &amp; Evaluation</li>
-                  <li>Theory &amp; Implementation</li>
+                  <li>Motivation (problem and Background)</li>
+                  <li>Design</li>
+                  <li>Implementation</li>
                   <li>Conclusion</li>
                 </ol>
                 <aside class="notes">
                   the world wide web and search
                 </aside>
               </section>
-
               <section>
+                <!-- <section> -->
+                <!--   <h2>Motivation</h2> -->
+                <!--   <p>The World Wide Web exposes a hyperlinked structure.</p> -->
+                <!--     <img width="578" height="400" -->
+                <!--     data&#45;src="/images/trail.png" alt="Down arrow"> -->
+                <!-- </section> -->
                 <section>
-                  <h2>Motivation</h2>
-                  <p>The World Wide Web exposes a hyperlinked structure</p>
-                    <img width="578" height="400"
-                    data-src="/images/trail.png" alt="Down arrow">
+                  <h2>Tags and Tweets</h2>
+                  <p>The perfect classification technique to suit any context!</p>
+                    <img data-src="/images/beat_signer_tweet.png" alt="Down arrow">
                 </section>
                 <section>
-                  <h3>Google Search</h3>
-                  <p>Query-Response technique enables sense making of the Web.</p>
-                  <a href="#" class="navigate-down">
-                    <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
-                  </a>
+                  <h2>Problem</h2>
+                  <p>How do you search and navigate tagged information?</p>
                 </section>
                 <section>
-                  <h3>Actionable Thinking</h3>
-                  <p>What do you ask if you don't know what are you looking for?</p>
-                    <img width="578" height="400" data-src="/images/action_thinking.png" alt="Down arrow">
-                <aside class="notes">
-                  Google Paradigm reaches its limits
-                </aside>
-                </section>
-              </section>
-              <!-- Example of nested vertical slides -->
-              <section>
-                <section>
-                  <h3>Yahoo's top-level categories</h3>
-                  <p>An attempt to simplify the structure of the Web</p>
-                  <ul>
-                    <li>Tangible Navigation links</li>
-                    <li>Permits open ended Exploration</li>
-                  </ul>
-                    <img width="578" height="400" data-src="/images/entertainment.jpg" alt="Down arrow">
-                  <aside class="notes">
-                    frees the mind from Actionable thinking
-                    you can gradually clarify your information need
-                  </aside>
-                </section>
-                <section>
-                  <h2>Taxonomy</h2>
-                  <p>Yahoo Top Level Categories make use of a tree structure</p>
-                  <ul>
-                    <li>File System with few symbolic links</li>
-                    <li>Classification Problem</li>
-                  </ul>
-                  <img width="578" height="400"
-                  data-src="/images/hierarchy_links.jpg" alt="Down arrow">
-                  <aside class="notes">
-                    good for navigation but does not capture the topology of the web
-                    difficult to scale for growing information space
-                  </aside>
-                </section>
-                <section>
-                  <h3>Unlimited symbolic links</h3>
-                  <p>What happens if one would allow unlimited symbolic links?</p>
-                  <img width="578" height="400"
-                  data-src="/images/just_links.jpg" alt="Down arrow">
-
-                  <aside class="notes">
-                    if you allow unlimited symbolic links you obtain a graph
-                    underlying structure of tagging
-                    but difficult to navigate
-                  </aside>
-                    <!-- captures perfectly the structure of the web -->
-                    <!-- Mult&#45;Classification with the user's vocabulary  -->
-                </section>
-              </section>
-              <section>
-                <section>
-                  <h2>Tagging</h2>
-                  <p>This Multi-Classification technique is often used in Web 2.0.</p>
-                  <img width="578" height="400"
-                  data-src="/images/tagging.png" alt="Down arrow">
+                  <h2>Tagged Information Spaces</h2>
+                  <p>Complex Structure is hard to make sense of</p>
+                  <p>Starting point is the <a data-preview-link href="http://irate-balance.surge.sh">Tag Graph</a>.</p>
                 </section>
                 <section>
                   <h3>Tags are difficult to explore</h3>
                   <p>By default, there is no navigation facility:</p>
                   <ul>
-                    <li>Query Browse and Refine</li>
+                    <li>Query. Browse and Refine</li>
                     <li>Tag (Set) Visualization</li>
                   </ul>
                   <aside class="notes">
@@ -152,70 +93,19 @@
                   </aside>
                 </section>
                 <section>
-                  <h2>Tag Cloud</h2>
-                  <p>Only tag frequency is depicted.</p>
-                  <p>Visual pleasing representation engages in search activity.</p>
-                  <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
-                  <aside>
-                    no relationships
-                  </aside>
+                  <h3>Traditional Way of Searching</h3>
+                  <p>Query-Response technique enables sense making of Tagging.</p>
+                  <p>What do you ask if you don't know what are you looking for?</p>
+                  <a href="#" class="navigate-down">
+                    <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
+                  </a>
                 </section>
-                <section>
-                  <h2>Venn Diagram</h2>
-                  <p>This technique depicts sets by circles and intersections by overlaps.</p>
-                  <img data-src="/images/venn-diagram.png">
-                  <aside class="notes">
-                    intuitive
-                    bad scaling
-                  </aside>
-                </section>
-                <section>
-                  <h2>Node-Link Diagram</h2>
-                  <p>Two nodes are connected if they intersect.</p>
-                  <img data-src="/images/foci_layout.png">
-                </section>
-              </section>
-              <section>
-                <h2>Thesis Aims</h2>
-                <p>
-                A new Tag Visualisation technique for Search needs to be designed
-                with the following properties:
-                </p>
-                <ul>
-                  <li>better Scaling</li>
-                  <li>navigation structure</li>
-                  <li>Visual appealing </li>
-                </ul>
-              </section>
-              <section>
-                <section>
-                  <h2>Background</h2>
-                  <div>
-                    <p>Several research fields are selected to drive the development:</p>
-                    <ul>
-                      <li>Exploratory Search</li>
-                      <li>Visual Exploration</li>
-                      <li>User Experience</li>
-                      <aside class="notes">
-                        no design methodologies for the two first, but for UX
-                      </aside>
-                    </ul>
-                  </div>
-                </section>
-                  <section>
-                    <h3>Exploratory Search</h3>
-                    <p>Knowledge is constructed through Search.</p>
-                    <img data-src="/images/exploratory_search.png">
-                    <aside class="notes">
-                      Discovery of Knowledge Gaps
-                    </aside>
-                  </section>
                   <section>
                     <h3>Visual Exploration</h3>
-                    <p>This information behavior supports visual search</p>
+                    <p>Using information visualisation techniques for search.</p>
                     <table>
                       <tr>
-                        <th>Query-Refine</th>
+                        <th>Query-Response</th>
                         <th>Exploration</th>
                       </tr>
                       <tr>
@@ -236,25 +126,138 @@
                       </tr>
                     </table>
                   </section>
-                  <section>
-                    <h3>User Experience</h3>
-                    <p>Model of HCI that goes beyond pure functonality</p>
-                    <table>
-                      <tr>
-                        <th>Do-Goals</th>
-                        <th>Be-Goals</th>
-                      </tr>
-                      <tr>
-                        <td>functonality and performance</td>
-                        <td>psychological goals</td>
-                      </tr>
-                      <tr>
-                        <td>performing a certain task</td>
-                        <td>feeling competent, stimulated, related or secure in a task</td>
-                      </tr>
-                    </table>
-                  </section>
+                <!-- <section> -->
+                <!--   <h2>Tagging</h2> -->
+                <!--   <p>This Multi&#45;Classification technique is often used in Web 2.0.</p> -->
+                <!--   <img width="578" height="400" -->
+                <!--   data&#45;src="/images/tagging.png" alt="Down arrow"> -->
+                <!-- </section> -->
+              </section>
+                <!-- <section> -->
+                <!--   <h3>Navigation</h3> -->
+                <!--   <p>Navigation can help to gradually clarify the information need!</p> -->
+                <!--     <img width="578" height="400" data&#45;src="/images/action_thinking.png" alt="Down arrow"> -->
+                <!-- <aside class="notes"> -->
+                <!--   Google Paradigm reaches its limits -->
+                <!-- </aside> -->
+                <!-- </section> -->
+              <!-- Example of nested vertical slides -->
+              <!-- <section> -->
+              <!--   <section> -->
+              <!--     <h3>Yahoo's top&#45;level categories</h3> -->
+              <!--     <p>An attempt to simplify the structure of the Web</p> -->
+              <!--     <ul> -->
+              <!--       <li>Tangible Navigation links</li> -->
+              <!--       <li>Permits open ended Exploration</li> -->
+              <!--     </ul> -->
+              <!--       <img width="578" height="400" data&#45;src="/images/entertainment.jpg" alt="Down arrow"> -->
+              <!--     <aside class="notes"> -->
+              <!--       frees the mind from Actionable thinking -->
+              <!--       you can gradually clarify your information need -->
+              <!--     </aside> -->
+              <!--   </section> -->
+              <!--   <section> -->
+              <!--     <h2>Taxonomy</h2> -->
+              <!--     <p>Yahoo Top Level Categories make use of a tree structure.</p> -->
+              <!--     <ul> -->
+              <!--       <li>File System with few symbolic links</li> -->
+              <!--       <li>Classification Problem</li> -->
+              <!--     </ul> -->
+              <!--     <img width="578" height="400" -->
+              <!--     data&#45;src="/images/hierarchy_links.jpg" alt="Down arrow"> -->
+              <!--     <aside class="notes"> -->
+              <!--       good for navigation but does not capture the topology of the web -->
+              <!--       difficult to scale for growing information space -->
+              <!--     </aside> -->
+              <!--   </section> -->
+              <!--   <section> -->
+              <!--     <h3>Unlimited symbolic links</h3> -->
+              <!--     <p>What happens if one would allow unlimited symbolic links?</p> -->
+              <!--     <img width="578" height="400" -->
+              <!--     data&#45;src="/images/just_links.jpg" alt="Down arrow"> -->
+              <!--  -->
+              <!--     <aside class="notes"> -->
+              <!--       if you allow unlimited symbolic links you obtain a graph -->
+              <!--       underlying structure of tagging -->
+              <!--       but difficult to navigate -->
+              <!--     </aside> -->
+              <!--       <!&#45;&#45; captures perfectly the structure of the web &#45;&#45;> -->
+              <!--       <!&#45;&#45; Mult&#38;#45;Classification with the user's vocabulary  &#45;&#45;> -->
+              <!--   </section> -->
+              <!-- </section> -->
+              <section>
+                <section>
+                  <h2>Current Visualisation Techniques for tags <h2>
                 </section>
+                <section>
+                  <h2>Tag Cloud</h2>
+                  <p>Only tag frequency is depicted.</p>
+                  <p>visual pleasing representation engages in search activity.</p>
+                  <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
+                  <aside>
+                    no relationships
+                  </aside>
+                </section>
+                <section>
+                  <h2>Venn Diagram</h2>
+                  <p>This technique depicts sets by circles and intersections by overlaps.</p>
+                  <img data-src="/images/venn-diagram.png">
+                  <aside class="notes">
+                    intuitive
+                    bad scaling
+                  </aside>
+                </section>
+                <section>
+                  <h2>Node-Link Diagram</h2>
+                  <p>Two nodes are connected if the corresponding tags intersect.</p>
+                  <img data-src="/images/foci_layout.png">
+                </section>
+              </section>
+              <section>
+                <h2>Thesis Aims</h2>
+                <p>
+                A new Tag Visualisation technique for Search needs to be designed
+                with the following properties:
+                </p>
+                <ul>
+                  <li>better Scaling</li>
+                  <li>navigation structure</li>
+                  <li>Visual appealing </li>
+                </ul>
+              </section>
+              <!-- <section> -->
+                <!-- <section> -->
+                <!--   <h2>Background</h2> -->
+                <!--   <div> -->
+                <!--     <p>Several research fields are selected to drive the development:</p> -->
+                <!--     <ul> -->
+                <!--       <li>Visual Exploration</li> -->
+                <!--       <li>User Experience</li> -->
+                <!--       <aside class="notes"> -->
+                <!--         no design methodologies for the two first, but for UX -->
+                <!--       </aside> -->
+                <!--     </ul> -->
+                <!--   </div> -->
+                <!-- </section> -->
+                  <!-- <section> -->
+                  <!--   <h3>User Experience</h3> -->
+                  <!--   <p>Model of HCI that goes beyond pure functonality</p> -->
+                  <!--   <table> -->
+                  <!--     <tr> -->
+                  <!--       <th>Do&#45;Goals</th> -->
+                  <!--       <th>Be&#45;Goals</th> -->
+                  <!--     </tr> -->
+                  <!--     <tr> -->
+                  <!--       <td>functonality and performance</td> -->
+                  <!--       <td>psychological goals</td> -->
+                  <!--     </tr> -->
+                  <!--     <tr> -->
+                  <!--       <td>performing a certain task</td> -->
+                  <!--       <td>feeling competent, stimulated, related or secure in a task</td> -->
+                  <!--     </tr> -->
+                  <!--   </table> -->
+                  <!-- </section> -->
+                <!-- </section> -->
                 <section>
                   <section>
                   <h2>Design of TagVis</h2>
@@ -269,8 +272,8 @@
                     <p>Research Training was based on the role of exploration in PI.</p>
                     <ul>
                       <li>already experienced information</li>
-                      <li>existing Search cues (spatial, time, context)</li>
-                      <li>more target oriented exploration</li>
+                      <li>existing search cues (spatial, time, context)</li>
+                      <li>People like to have orientation</li>
                     </ul>
                   </section>
                   <section>
@@ -283,25 +286,34 @@
                     <h4>Resulting Prototypes</h4>
                     <img height="600px" data-src="/images/prots.jpg">
                   </section>
+                  <section><!-- http://localhost:8082/ -->
+                    <h2>TagVis Demo</h2>
+                    <a href="http://fragile-doctor.surge.sh" data-preview-link>TagVis</a>
+                  </section>
                 </section>
               <section>
-                <h2>TagVis Demo</h2>
-                <a href="http://localhost:8082/" data-preview-link>TagVis</a>
-              </section>
               <section>
                 <h2>Evaluation</h2>
-                <p>UX is tested with the Participant Observation technique.</p>
-                <!-- <p>Participants according the Perso</p> -->
-                <p>Users performed tasks on their personal bookmarks.</p>
+                </section>
+              <section>
+                <h3>Participant Observation technique</h3>
+                  <p>Personas are matched with real users</p>
+                  <p>Knowledge worker vs casual user</p>
+                  <p>Result: Tension between Exploring and finding</p>
+                  <!-- <p>Users performed tasks on their personal bookmarks.</p> -->
+                  <!-- <p>Participants according the Perso</p> -->
+                </section>
+              </section>
+              </section>
+
               </section>
               <section>
                 <section>
-                  <h2>Theory and Implementation</h2>
-                  <p>TagVis uses a two-layer graph layout.</p>
-                  <p>Starting point is the Tag Graph.</p>
+                  <h2>Implementation</h2>
                 </section>
                 <section>
                   <h3>Tag Graph Simplification</h3>
+                  <p>How to get a navigation structure?</p>
                   <p>The Tag Graph is traversed with BFS.</p>
                   <p>Nodes are selected based on Generality:</p>
                   <img data-src="/images/formula.png">
@@ -317,31 +329,30 @@
                 <h2>Conclusion</h2>
                 <p>What are the benefits and drawbacks of TagVis over its competitors?</p>
               </section>
-              <section>
-                <table>
-                  <tr>
-                    <th>Benefits</th>
-                    <th>Exploration</th>
-                  </tr>
-                  <tr>
-                    <td>specific</th>
-                    <td>Engaging</td>
-                  </tr>
-                  <tr>
-                    <td>low level</td>
-                    <td>High-level</td>
-                  </tr>
-                  <tr>
-                    <td>ranked</td>
-                    <td>multi-faceted</td>
-                  </tr>
-                  <tr>
-                    <td>textual</td>
-                    <td>multi-modal</td>
-                  </tr>
-                </table>
-              </section>
-              <section data-external="tagVis/index.html"> </section>
+              <!-- <section> -->
+              <!--   <table> -->
+              <!--     <tr> -->
+              <!--       <th>Benefits</th> -->
+              <!--       <th>Exploration</th> -->
+              <!--     </tr> -->
+              <!--     <tr> -->
+              <!--       <td>specific</th> -->
+              <!--       <td>Engaging</td> -->
+              <!--     </tr> -->
+              <!--     <tr> -->
+              <!--       <td>low level</td> -->
+              <!--       <td>High&#45;level</td> -->
+              <!--     </tr> -->
+              <!--     <tr> -->
+              <!--       <td>ranked</td> -->
+              <!--       <td>multi&#45;faceted</td> -->
+              <!--     </tr> -->
+              <!--     <tr> -->
+              <!--       <td>textual</td> -->
+              <!--       <td>multi&#45;modal</td> -->
+              <!--     </tr> -->
+              <!--   </table> -->
+              <!-- </section> -->
             </div>
           </div>
 
