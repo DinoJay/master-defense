@@ -51,7 +51,8 @@
               <section>
                 <h2>structure of the talk</h2>
                 <ol>
-                  <li>Motivation (problem and Background)</li>
+                  <li>Motivation (problem)</li>
+                  <li>Background (theory and solution candidates)</li>
                   <li>Design</li>
                   <li>Implementation</li>
                   <li>Conclusion</li>
@@ -85,7 +86,7 @@
                   <h3>Tags are difficult to explore</h3>
                   <p>By default, there is no navigation facility:</p>
                   <ul>
-                    <li>Query. Browse and Refine</li>
+                    <li>Query, Browse and Refine</li>
                     <li>Tag (Set) Visualization</li>
                   </ul>
                   <aside class="notes">
@@ -95,14 +96,12 @@
                 <section>
                   <h3>Traditional Way of Searching</h3>
                   <p>Query-Response technique enables sense making of Tagging.</p>
-                  <p>What do you ask if you don't know what are you looking for?</p>
-                  <a href="#" class="navigate-down">
-                    <img width="578" height="400" data-src="/images/search_mask.jpg" alt="Down arrow">
-                  </a>
+                    <img width="400" height="300" data-src="/images/query-res.png" alt="Down arrow">
+                    <aside class="notes">What do you ask if you don't know what are you looking for?</aside>
                 </section>
                   <section>
                     <h3>Visual Exploration</h3>
-                    <p>Using information visualisation techniques for search.</p>
+                    <p>Using Information Visualisation techniques for search.</p>
                     <table>
                       <tr>
                         <th>Query-Response</th>
@@ -187,13 +186,18 @@
               <!-- </section> -->
               <section>
                 <section>
-                  <h2>Current Visualisation Techniques for tags <h2>
+                  <h2>Background</h2>
+                  <p>Current Visualisation Techniques for tags.</p>
                 </section>
                 <section>
                   <h2>Tag Cloud</h2>
-                  <p>Only tag frequency is depicted.</p>
-                  <p>visual pleasing representation engages in search activity.</p>
-                  <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
+                  <ul>
+                    <li>Only tag frequency is depicted.</li>
+                    <li>visual pleasing representation engages in search activity.</li>
+                  </ul>
+                  <div>
+                    <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
+                  </div>
                   <aside>
                     no relationships
                   </aside>
@@ -210,7 +214,7 @@
                 <section>
                   <h2>Node-Link Diagram</h2>
                   <p>Two nodes are connected if the corresponding tags intersect.</p>
-                  <img data-src="/images/foci_layout.png">
+                  <img height="400px" data-src="/images/foci_layout.png">
                 </section>
               </section>
               <section>
@@ -222,7 +226,7 @@
                 <ul>
                   <li>better Scaling</li>
                   <li>navigation structure</li>
-                  <li>Visual appealing </li>
+                  <li>visual appealing </li>
                 </ul>
               </section>
               <!-- <section> -->
@@ -278,8 +282,8 @@
                   </section>
                   <section>
                     <h3>Design Methodology</h3>
+                    <p>Requirements are specified with Personas.</p>
                     <p>3 Prototypes are integrated into one solution.</p>
-                    <p>Review is based visual readability and navigation modalities.</p>
                     <img data-src="/images/design_meth.png">
                   </section>
                   <section>
@@ -288,22 +292,9 @@
                   </section>
                   <section><!-- http://localhost:8082/ -->
                     <h2>TagVis Demo</h2>
-                    <a href="http://fragile-doctor.surge.sh" data-preview-link>TagVis</a>
+                    <a href="http://tasteless-minute.surge.sh/" data-preview-link>TagVis</a>
                   </section>
                 </section>
-              <section>
-              <section>
-                <h2>Evaluation</h2>
-                </section>
-              <section>
-                <h3>Participant Observation technique</h3>
-                  <p>Personas are matched with real users</p>
-                  <p>Knowledge worker vs casual user</p>
-                  <p>Result: Tension between Exploring and finding</p>
-                  <!-- <p>Users performed tasks on their personal bookmarks.</p> -->
-                  <!-- <p>Participants according the Perso</p> -->
-                </section>
-              </section>
               </section>
 
               </section>
@@ -314,9 +305,11 @@
                 <section>
                   <h3>Tag Graph Simplification</h3>
                   <p>How to get a navigation structure?</p>
-                  <p>The Tag Graph is traversed with BFS.</p>
-                  <p>Nodes are selected based on Generality:</p>
+                  <ul>
+                  <li>The Tag Graph is traversed with BFS.</li>
+                  <li>Nodes are selected based on Generality:</li>
                   <img data-src="/images/formula.png">
+                  </ul>
                 </section>
                 <section>
                   <h3>Component Graph</h3>
@@ -328,6 +321,21 @@
               <section>
                 <h2>Conclusion</h2>
                 <p>What are the benefits and drawbacks of TagVis over its competitors?</p>
+              </section>
+              <section>
+              <section>
+                <h2>Evaluation</h2>
+                </section>
+              <section>
+                <h3>Participant Observation technique</h3>
+                  <ul>
+                    <li>Personas are matched with real users</li>
+                    <li>2 user types: knowledge worker vs casual user</li>
+                    <li>Result: Tension between Exploring and finding</li>
+                  </ul>
+                  <!-- <p>Users performed tasks on their personal bookmarks.</p> -->
+                  <!-- <p>Participants according the Perso</p> -->
+                </section>
               </section>
               <!-- <section> -->
               <!--   <table> -->
