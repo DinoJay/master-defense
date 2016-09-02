@@ -6,8 +6,8 @@
 
 		<title>reveal.js – The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="TagVis: A Visualisation between Tags">
+		<meta name="author" content="Jan">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -50,28 +50,28 @@
               </section>
               <section>
                 <h2>structure of the talk</h2>
-                <ol>
-                  <li>Motivation (problem)</li>
-                  <li>Background (theory and solution candidates)</li>
-                  <li>Design</li>
-                  <li>Implementation</li>
-                  <li>Conclusion</li>
-                </ol>
+                <!-- <ol> -->
+                <!--   <li>Motivation (problem)</li> -->
+                <!--   <li>Background (theory and solution candidates)</li> -->
+                <!--   <li>Design</li> -->
+                <!--   <li>Implementation</li> -->
+                <!--   <li>Conclusion</li> -->
+                <!-- </ol> -->
+                <img height="400px" data-src="/images/cloud.png" alt="Down arrow">
                 <aside class="notes">
                   the world wide web and search
                 </aside>
               </section>
               <section>
-                <!-- <section> -->
-                <!--   <h2>Motivation</h2> -->
-                <!--   <p>The World Wide Web exposes a hyperlinked structure.</p> -->
-                <!--     <img width="578" height="400" -->
-                <!--     data&#45;src="/images/trail.png" alt="Down arrow"> -->
-                <!-- </section> -->
+                <section>
+                  <h2>Motivation</h2>
+                </section>
                 <section>
                   <h2>Tags and Tweets</h2>
-                  <p>The perfect classification technique to suit any context!</p>
-                    <img data-src="/images/beat_signer_tweet.png" alt="Down arrow">
+                  <li>Flexible classification technique to suit any context!</li>
+                  <li>Solves the classification problem</li>
+                  </ul>
+                    <img height="400px" data-src="/images/beat_signer_tweet.png" alt="Down arrow">
                 </section>
                 <section>
                   <h2>Problem</h2>
@@ -84,24 +84,28 @@
                 </section>
                 <section>
                   <h3>Tags are difficult to explore</h3>
-                  <p>By default, there is no navigation facility:</p>
+                  <p>By default, there is no navigation behaviour:</p>
                   <ul>
-                    <li>Query, Browse and Refine</li>
-                    <li>Tag (Set) Visualization</li>
+                    <li>Directed search</li>
+                    <li>Visual exploration</li>
                   </ul>
                   <aside class="notes">
+                    connection from before ?
                     no predefined categories, user generated
                   </aside>
                 </section>
                 <section>
-                  <h3>Traditional Way of Searching</h3>
-                  <p>Query-Response technique enables sense making of Tagging.</p>
+                  <h3>Directed Search</h3>
+                  <p>Query-Response technique enables sense making of tags.</p>
                     <img width="400" height="300" data-src="/images/query-res.png" alt="Down arrow">
                     <aside class="notes">What do you ask if you don't know what are you looking for?</aside>
                 </section>
                   <section>
                     <h3>Visual Exploration</h3>
-                    <p>Using Information Visualisation techniques for search.</p>
+                    <ul>
+                      <li>Using Information Visualisation techniques for search.</li>
+                      <li>Small located steps to a target ini</li>
+                    </ul>
                     <table>
                       <tr>
                         <th>Query-Response</th>
@@ -185,15 +189,17 @@
               <!--   </section> -->
               <!-- </section> -->
               <section>
+
                 <section>
                   <h2>Background</h2>
-                  <p>Current Visualisation Techniques for tags.</p>
+                  <!-- <p>Current Visualisation Techniques for tags.</p> -->
+                  <p>Set Visualisation techniques can be applied on tags.</p>
                 </section>
                 <section>
                   <h2>Tag Cloud</h2>
                   <ul>
-                    <li>Only tag frequency is depicted.</li>
-                    <li>visual pleasing representation engages in search activity.</li>
+                    <li>Only tag frequency is depicted</li>
+                    <li>Visual pleasing representation engages in search activity</li>
                   </ul>
                   <div>
                     <img width="400" height="400" data-src="/images/wordcloud.png" alt="Down arrow">
@@ -204,7 +210,7 @@
                 </section>
                 <section>
                   <h2>Venn Diagram</h2>
-                  <p>This technique depicts sets by circles and intersections by overlaps.</p>
+                  <p>Depicting sets by circles and intersections by overlaps</p>
                   <img data-src="/images/venn-diagram.png">
                   <aside class="notes">
                     intuitive
@@ -213,21 +219,24 @@
                 </section>
                 <section>
                   <h2>Node-Link Diagram</h2>
-                  <p>Two nodes are connected if the corresponding tags intersect.</p>
+                  <ul>
+                    <li>Nodes represent tag sets</li>
+                    <li>Every two nodes are connected if the corresponding tags intersect</li>
+                  </ul>
                   <img height="400px" data-src="/images/foci_layout.png">
                 </section>
               </section>
               <section>
                 <h2>Thesis Aims</h2>
                 <p>
-                A new Tag Visualisation technique for Search needs to be designed
-                with the following properties:
+                Design of a new Tag Visualisation technique for search with the following properties:
                 </p>
-                <ul>
-                  <li>better Scaling</li>
-                  <li>navigation structure</li>
-                  <li>visual appealing </li>
-                </ul>
+                <ol>
+                  <li>Support visual exploration and directed search</li>
+                  <li>Navigation structure</li>
+                  <li>Better scaling</li>
+                  <li>Visual appealing </li>
+                </ol>
               </section>
               <!-- <section> -->
                 <!-- <section> -->
@@ -267,22 +276,28 @@
                   <h2>Design of TagVis</h2>
                     <ul>
                       <li>Personal Information Domain</li>
-                      <li>User-centered (Personas)</li>
+                      <li>User-centered Design (Personas)</li>
                       <li>Iterative Development of Prototypes</li>
                     </ul>
                   </section>
                   <section>
                     <h3>Personal Information</h3>
-                    <p>Research Training was based on the role of exploration in PI.</p>
+                    <p><b>Research Training</b>: The role of exploration in personal
+                      information.
+                    </p>
                     <ul>
-                      <li>already experienced information</li>
-                      <li>existing search cues (spatial, time, context)</li>
+                      <li>Already experienced information</li>
+                      <li>Existing search cues (location, time, context)</li>
                       <li>People like to have orientation</li>
                     </ul>
                   </section>
                   <section>
+                    <h3>User Analysis</h3>
+                      <p>Requirements are specified with Personas.</p>
+                      <img data-src="/images/personas.png">
+                  </section>
+                  <section>
                     <h3>Design Methodology</h3>
-                    <p>Requirements are specified with Personas.</p>
                     <p>3 Prototypes are integrated into one solution.</p>
                     <img data-src="/images/design_meth.png">
                   </section>
@@ -290,77 +305,97 @@
                     <h4>Resulting Prototypes</h4>
                     <img height="600px" data-src="/images/prots.jpg">
                   </section>
+                  <section>
+                    <h4>Venn Node Diagram</h4>
+                    <img height="600px" data-src="/images/prots.jpg">
+                  </section>
+                  <section>
+                    <h4>Facet Viewuser's >
+                    <img height="600px" data-src="/images/prots.jpg">
+                  </section>
+                  <section>
+                    <h4>Bubble Sets</h4>
+                    <img height="600px" data-src="/images/prots.jpg">
+                  </section>
+                  <section>
+                    <h4>Hybrid Approach</h4>
+                    <p>Combine Bubble Sets and Node-Link diagram</p>
+                    <img data-src="/images/hybrid_appr.png">
+                  </section>
                   <section><!-- http://localhost:8082/ -->
                     <h2>TagVis Demo</h2>
                     <a href="http://tasteless-minute.surge.sh/" data-preview-link>TagVis</a>
                   </section>
-                </section>
-              </section>
-
-              </section>
-              <section>
-                <section>
-                  <h2>Implementation</h2>
-                </section>
-                <section>
-                  <h3>Tag Graph Simplification</h3>
-                  <p>How to get a navigation structure?</p>
-                  <ul>
-                  <li>The Tag Graph is traversed with BFS.</li>
-                  <li>Nodes are selected based on Generality:</li>
-                  <img data-src="/images/formula.png">
-                  </ul>
-                </section>
+                  <section>
+                    <h2>Implementation</h2>
+                  </section>
+                  <section>
+                    <h3>Tag Graph Revisited</h3>
+                    <ul>
+                      <li>The Tag Graph is traversed with BFS.</li>
+                      <li>Nodes are selected based on Generality:</li>
+                    </ul>
+                    <img data-src="/images/formula.png">
+                    <p>Result: simplified <a data-preview-link href="http://animated-hall.surge.sh/">Tag Graph</a>.</p>
+                  </section>
                 <section>
                   <h3>Component Graph</h3>
                   <p>TagVis uses connected components for the final layout.</p>
                   <p>Each component is limited in size by maximal path length.</p>
+                  <img height="400px" data-src="/images/Graph_Condensation.svg">
                 </section>
-              </section>
-              </section>
-              <section>
-                <h2>Conclusion</h2>
-                <p>What are the benefits and drawbacks of TagVis over its competitors?</p>
-              </section>
+                </section>
               <section>
               <section>
                 <h2>Evaluation</h2>
+              </section>
+                <section>
+                    <h3>Participant Observation technique</h3>
+                      <ul>
+                        <li>Personas are matched with real users</li>
+                        <li>Task performance is observed in user's environment</li>
+                      </ul>
+                      <!-- <p>Users performed tasks on their personal bookmarks.</p> -->
+                      <!-- <p>Participants according the Perso</p> -->
+                    <aside class="notes">
+                      Result: Tension between exploration and directed search
+                    </aside>
                 </section>
-              <section>
-                <h3>Participant Observation technique</h3>
-                  <ul>
-                    <li>Personas are matched with real users</li>
-                    <li>2 user types: knowledge worker vs casual user</li>
-                    <li>Result: Tension between Exploring and finding</li>
-                  </ul>
-                  <!-- <p>Users performed tasks on their personal bookmarks.</p> -->
-                  <!-- <p>Participants according the Perso</p> -->
+                <section>
+                    <h3>Evaluation Design</h3>
+                    <img data-src="/images/eval_sum.png">
                 </section>
               </section>
-              <!-- <section> -->
-              <!--   <table> -->
-              <!--     <tr> -->
-              <!--       <th>Benefits</th> -->
-              <!--       <th>Exploration</th> -->
-              <!--     </tr> -->
-              <!--     <tr> -->
-              <!--       <td>specific</th> -->
-              <!--       <td>Engaging</td> -->
-              <!--     </tr> -->
-              <!--     <tr> -->
-              <!--       <td>low level</td> -->
-              <!--       <td>High&#45;level</td> -->
-              <!--     </tr> -->
-              <!--     <tr> -->
-              <!--       <td>ranked</td> -->
-              <!--       <td>multi&#45;faceted</td> -->
-              <!--     </tr> -->
-              <!--     <tr> -->
-              <!--       <td>textual</td> -->
-              <!--       <td>multi&#45;modal</td> -->
-              <!--     </tr> -->
-              <!--   </table> -->
-              <!-- </section> -->
+              <section>
+                <section>
+                  <h2>Conclusion</h2>
+                  <p>What are the benefits and drawbacks of TagVis over its competitors?</p>
+                </section>
+              </section>
+              <section>
+                <table>
+                  <tr>
+                    <th>Benefits</th>
+                    <th>Drawbacks</th>
+                  </tr>
+                  <tr>
+                    <td>scaling is superior to alternative techniques</th>
+                    <td>Engaging</td>
+                  </tr>
+                  <tr>
+                    <td>easy navigation</td>
+                    <td>navigational links are not always accurate</td>
+                  </tr>
+                  <tr>
+                    <td>ranked</td>
+                    <td>multi-faceted</td>
+                  </tr>
+                  <tr>
+                    <td>textual</td>
+                    <td>multi-modal</td>
+                  </tr>
+                </table>
+              </section>
             </div>
           </div>
 
